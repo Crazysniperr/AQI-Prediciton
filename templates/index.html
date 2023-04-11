@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Quality Prediction</title>
+</head>
+<body>
+	<h1>Air Quality Prediction</h1>
+	<form action="/predict" method="post">
+		<label for="T">T (Temperature):</label>
+		<input type="number" name="T" id="T" required>
+		<br>
+		<label for="TM">TM (Maximum temperature):</label>
+		<input type="number" name="TM" id="TM" required>
+		<br>
+		<label for="Tm">Tm (Minimum temperature):</label>
+		<input type="number" name="Tm" id="Tm" required>
+		<br>
+		<label for="SLP">SLP (Atmospheric pressure at sea level):</label>
+		<input type="number" name="SLP" id="SLP" required>
+		<br>
+		<label for="H">H (Relative humidity):</label>
+		<input type="number" name="H" id="H" required>
+		<br>
+		<label for="VV">VV (Visibility):</label>
+		<input type="number" name="VV" id="VV" step="0.01" required>
+		<br>
+		<label for="V">V (Wind speed):</label>
+		<input type="number" name="V" id="V" step="0.01" required>
+		<br>
+		<label for="VM">VM (Maximum sustained wind speed):</label>
+		<input type="number" name="VM" id="VM" required>
+		<br>
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>
